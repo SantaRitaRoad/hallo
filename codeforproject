@@ -1,0 +1,50 @@
+import random
+import index
+
+Categories = {
+    "La Rutina Diaria": ["inodoro"],
+    "La Comida": ["helado"],
+    "Las Fiestas": ["amistad"],
+    "En El Consultorio": ["salud"],
+    "La Technologia": ["teclado"],
+    "La Vivienda": ["tostadora"]
+}
+
+CategoryName, SecretWord = random.choice(list(Categories.items()))
+SecretWord = SecretWord[0]
+Result = ["You Suck Failure", "You Won!"]
+CorrectSpots = ["_"] * len(SecretWord)
+
+def choose_same_index(CorrectSpots, SecretWord):
+    index = random.randint(0, min(len(CorrectSpots), len(SecretWord)) - 1)
+    return CorrectSpots[index], SecretWord[index]
+
+print("Category:", CategoryName)
+print("Please input a word with exactly", len(SecretWord), "letters.")
+
+for turn in range(1, 11):
+    print("-----------------------------------------------")
+    print("Attempt number:", turn)
+    guess = input("Alvidas la palabra: ").lower()
+   
+    if len(guess) != len(SecretWord) or not guess.isalpha():
+        print("Please input a word with exactly", len(SecretWord), "letters.")
+        continue
+
+    if guess == SecretWord:
+        print(Result[1])
+        break
+
+    for i in range(len(SecretWord)):
+        if guess[i] == SecretWord[i]:
+            CorrectSpots[i] = guess[i]
+        elif guess[i] not in SecretWord:
+            choose_same_index(CorrectSpots, SecretWord)
+        else:
+            CorrectSpots[i] = "_"  
+
+    print("Your result so far:")
+    print(" ".join(CorrectSpots))
+
+else:
+    print(Result[0])
