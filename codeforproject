@@ -3,10 +3,10 @@ import random
 Categories = {
     "La Rutina Diaria": ["inodoro"],
     "La Comida": ["helado"],
-    "Las Fiestas": ["amistad"],
+    "Las Fiestas": ["amistad"], ["quinceanera"]
     "En El Consultorio": ["salud"],
-    "La Technologia": ["teclado"],
-    "La Vivienda": ["tostadora"]
+    "La Technologia": ["teclado"], ["ordenador"], ["computadora"], ["pantalla"], ["raton"], ["escritorio"], ["icono"], ["antivirus"], ["archivo"], ["altavoce"], ["giga"], ["impresora"], ["tableta"], ["telefono"], ["movil"], ["estufa"], ["cafetera"], ["congelador"], ["electrodomestico"], ["microonda"], ["lavadora"], ["lavaplatos"], ["refrigerador"], ["secadora"], ["tostadora"], ["tecnologia"], ["luz"], ["electricidad"], ["television"], ["carro"]
+    "La Vivienda": ["sotano"], ["piso"], ["entrada"], ["patio"], ["sala"], ["comodo"], ["dormitorio"], ["cortina"], ["vecino"], ["mudarse"], ["afuera"], ["alquiler"], ["atillo"], ["barrio"], ["balcon"], ["comedor"], ["apartamento"], ["cocina"], ["escalera"], ["garaje"], ["hogar"], ["casa"], ["oficina"], ["jardin"], ["pasillo"], ["alguilar"], ["condominio"], ["vivienda"], ["ventana"], ["puerta"]
 }
 
 CategoryName, SecretWord = random.choice(list(Categories.items()))
