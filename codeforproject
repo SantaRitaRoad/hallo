@@ -1,8 +1,11 @@
 import random
 
+###
+
+
 Score = 100
 
-Categories = {
+Categories = {     
     "La Rutina Diaria": ["acordar", "acostar", "afeitar", "despedir", "despertar", "dormir", "duchar", "enojar", "ir", "levantar", "llamar", "maquillar", "peinar", "poner", "preocupar", "probar", "quedar", "quitar", "secar", "sentar", "sentir", "vestir", "antes", "luego", "durante", "entonces", "algo", "alguien", "nada", "nadie"],
     "La Comida": ["helado", "mananza", "naranja", "mango", "platano", "uva", "arandano", "fresa", "frambuesa", "cereza", "circula", "limon", "melon", "pera", "pomelo", "aquacate", "pan", "trigo", "cereal", "maiz", "leche", "agua", "zumo", "cafe", "te", "resfrescos", "cafeina", "grasa", "zanahoria", "ajo"],
     "Las Fiestas": ["amistad", "quinceanera", "anversario", "boda", "cumpleanos", "fiesta", "invitado", "invitada", "navidad", "sorpresa", "brindar", "celebrar", "divertirse", "invitar", "regalar", "reirse", "relajarse", "sonreir", "sorprender", "flan", "champan"],
