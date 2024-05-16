@@ -58,3 +58,5 @@ for turn in range(1, 11):
 
 else:
     print(Result[0])
+
+print("Refresh the website to play again!")
